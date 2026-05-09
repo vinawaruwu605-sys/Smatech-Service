@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Smartech Service</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#f5f7fb;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#0f172a,#2563eb);
+      color:white;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+    }
+
+    .logo span{
+      color:#60a5fa;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#93c5fd;
+    }
+
+    .hero{
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:60px 8%;
+      background:linear-gradient(to right,#dbeafe,#ffffff);
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      flex:1;
+    }
+
+    .hero-text h1{
+      font-size:52px;
+      color:#0f172a;
+      margin-bottom:20px;
+    }
+
+    .hero-text p{
+      font-size:18px;
+      margin-bottom:30px;
+      color:#475569;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 28px;
+      background:#2563eb;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#1d4ed8;
+      transform:translateY(-3px);
+    }
+
+    .hero-image{
+      flex:1;
+      text-align:center;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:450px;
+    }
+
+    section{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      font-size:38px;
+      color:#0f172a;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      transition:0.3s;
+      cursor:pointer;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#2563eb;
+    }
+
+    .about{
+      display:flex;
+      align-items:center;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .about img{
+      width:100%;
+      max-width:400px;
+      border-radius:20px;
+    }
+
+    .about-text{
+      flex:1;
+    }
+
+    .contact{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      border-radius:25px;
+      padding:60px 30px;
+    }
+
+    .contact h2{
+      margin-bottom:20px;
+      font-size:36px;
+    }
+
+    .contact p{
+      margin-bottom:10px;
+      font-size:18px;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#020617;
+      color:#cbd5e1;
+    }
+
+    @media (max-width:768px){
+
+      .hero-text h1{
+        font-size:38px;
+      }
+
+      header{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav a{
+        margin:0 10px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">
+      Smartech <span>Service</span>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <h1>
+        Solusi Service Elektronik & Teknologi Terpercaya
+      </h1>
+
+      <p>
+        Smartech Service melayani perbaikan laptop,
+        komputer, printer, instalasi software,
+        dan berbagai kebutuhan teknologi dengan cepat,
+        aman, dan profesional.
+      </p>
+
+      <a href="#kontak" class="btn">
+        Hubungi Kami
+      </a>
+
+    </div>
+
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Teknologi">
+    </div>
+
+  </section>
+
+  <!-- LAYANAN -->
+
+  <section id="layanan">
+
+    <div class="section-title">
+      <h2>Layanan Kami</h2>
+    </div>
+
+    <div class="services">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop" alt="Service Laptop">
+
+        <div class="card-content">
+
+          <h3>Service Laptop</h3>
+
+          <p>
+            Perbaikan laptop rusak, instal ulang,
+            upgrade RAM dan SSD, serta pembersihan perangkat.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1000&auto=format&fit=crop" alt="Service Komputer">
+
+        <div class="card-content">
+
+          <h3>Service Komputer</h3>
+
+          <p>
+            Menangani berbagai masalah komputer seperti
+            error sistem, hardware rusak, dan optimasi performa.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop" alt="Instalasi Software">
+
+        <div class="card-content">
+
+          <h3>Instalasi Software</h3>
+
+          <p>
+            Instal aplikasi, antivirus, Microsoft Office,
+            desain grafis, dan software kebutuhan lainnya.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1612810806695-30f7a8258391?q=80&w=1000&auto=format&fit=crop" alt="Service Printer">
+
+        <div class="card-content">
+
+          <h3>Service Printer</h3>
+
+          <p>
+            Perbaikan printer error, tinta macet,
+            cleaning head, dan reset printer.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- KEUNGGULAN -->
+
+  <section id="keunggulan">
+
+    <div class="section-title">
+      <h2>Kenapa Memilih Kami?</h2>
+    </div>
+
+    <div class="services">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1000&auto=format&fit=crop" alt="Cepat">
+
+        <div class="card-content">
+
+          <h3>⚡ Pengerjaan Cepat</h3>
+
+          <p>
+            Kami mengutamakan kecepatan service
+            tanpa mengurangi kualitas hasil pengerjaan.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1000&auto=format&fit=crop" alt="Harga">
+
+        <div class="card-content">
+
+          <h3>💰 Harga Terjangkau</h3>
+
+          <p>
+            Harga service ramah di kantong
+            dengan kualitas profesional dan terpercaya.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?q=80&w=1000&auto=format&fit=crop" alt="Teknisi">
+
+        <div class="card-content">
+
+          <h3>🛠 Teknisi Berpengalaman</h3>
+
+          <p>
+            Ditangani langsung oleh teknisi
+            yang berpengalaman di bidang teknologi dan elektronik.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop" alt="Konsultasi">
+
+        <div class="card-content">
+
+          <h3>📱 Konsultasi Gratis</h3>
+
+          <p>
+            Pelanggan dapat berkonsultasi terlebih dahulu
+            mengenai kerusakan perangkat.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TENTANG -->
+
+  <section id="tentang">
+
+    <div class="section-title">
+      <h2>Tentang Kami</h2>
+    </div>
+
+    <div class="about">
+
+      <img src="https://cdn-icons-png.flaticon.com/512/1995/1995470.png" alt="About">
+
+      <div class="about-text">
+
+        <p>
+          Smartech Service adalah usaha di bidang teknologi
+          dan service elektronik yang mengutamakan kualitas pelayanan,
+          kecepatan pengerjaan, dan kepuasan pelanggan.
+        </p>
+
+        <br>
+
+        <p>
+          Dengan teknisi yang berpengalaman,
+          kami siap membantu berbagai masalah perangkat teknologi Anda
+          dengan harga terjangkau dan hasil terbaik.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- KONTAK -->
+
+  <section id="kontak">
+
+    <div class="contact">
+
+      <h2>Kontak Kami</h2>
+
+      <p>📍 Alamat: Gunungsitoli, Sumatera Utara</p>
+
+      <p>📞 WhatsApp: 082304519875</p>
+
+      <p>📧 Email: marselinabulolo42@gmail.com</p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>© 2026 Smartech Service. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
